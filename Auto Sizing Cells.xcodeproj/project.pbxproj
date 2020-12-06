@@ -35,6 +35,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB506544257CC95500E84554 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DBD9D4BB2579248B0030CC4F /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DB506545257CC95E00E84554 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				DBD9D4C62579248C0030CC4F /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		DB506546257CC96A00E84554 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DBD9D4C42579248C0030CC4F /* Assets.xcassets */,
+				DBD9D4C92579248C0030CC4F /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DB506547257CC97900E84554 /* Scens */ = {
+			isa = PBXGroup;
+			children = (
+				DBD9D4D725792D520030CC4F /* TableCell.swift */,
+				DBD9D4BF2579248B0030CC4F /* ViewController.swift */,
+			);
+			path = Scens;
+			sourceTree = "<group>";
+		};
 		DBD9D4AF2579248B0030CC4F = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +88,10 @@
 		DBD9D4BA2579248B0030CC4F /* Auto Sizing Cells */ = {
 			isa = PBXGroup;
 			children = (
-				DBD9D4BB2579248B0030CC4F /* AppDelegate.swift */,
-				DBD9D4BF2579248B0030CC4F /* ViewController.swift */,
-				DBD9D4C42579248C0030CC4F /* Assets.xcassets */,
-				DBD9D4C62579248C0030CC4F /* LaunchScreen.storyboard */,
-				DBD9D4C92579248C0030CC4F /* Info.plist */,
-				DBD9D4D725792D520030CC4F /* TableCell.swift */,
+				DB506547257CC97900E84554 /* Scens */,
+				DB506546257CC96A00E84554 /* Resources */,
+				DB506545257CC95E00E84554 /* StoryBoard */,
+				DB506544257CC95500E84554 /* Core */,
 			);
 			path = "Auto Sizing Cells";
 			sourceTree = "<group>";
@@ -276,7 +308,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87JP2ZZ6RR;
-				INFOPLIST_FILE = "Auto Sizing Cells/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Auto Sizing Cells/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 87JP2ZZ6RR;
-				INFOPLIST_FILE = "Auto Sizing Cells/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Auto Sizing Cells/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
