@@ -7,18 +7,13 @@
 
 import UIKit
 
-struct MessageModel  {
-
-    let text :String
-    let isComing:Bool
-    let data : Date
-}
 
 
 class ViewController: UITableViewController {
 
     let reuseID = "Cell"
-    
+
+    var dataArray = [[MessageModel]]()
 
 //    let dataArray = [
 //
@@ -41,14 +36,19 @@ class ViewController: UITableViewController {
     
     
     let serverMessages = [
+        
+        MessageModel(text: "the new team", isComing: true, data: Date.customStringDate(StringDate: "01-12-2020")),
+      MessageModel(text: "the new company is very good and the team", isComing: false, data: Date()),
+        
         MessageModel(text: "the new company is very good and the team is very very intellegent and has more informations about technology the new company is very good and the team is very very intellegent and has more informations about technology", isComing: true, data:  Date.customStringDate(StringDate: "05-12-2020")),
         MessageModel(text: "the new company is very good and the team is very very intellegent and has more informations about technology the new company is very good and the team is very very intellegent and has more informations about technology the new company is very good and the team is very very intellegent and has more informations about technology", isComing: false, data:  Date.customStringDate(StringDate: "06-12-2020")),
-        MessageModel(text: "new company is very good and the team is very very intellegent and has more informations about technology", isComing: false, data:  Date.customStringDate(StringDate: "07-12-2020"))
+        MessageModel(text: "new company is very good and the team is very very intellegent and has more informations about technology", isComing: false, data:  Date.customStringDate(StringDate: "07-12-2020")),
+        MessageModel(text: "the new company is very good and the team is very very intellegent and has more", isComing: false, data:  Date.customStringDate(StringDate: "02-12-2020")),
+                MessageModel(text: "the new company is very good and the team is very very intellegent and has more informations about technology the new company is very good and the team is very very intellegent and has more informations about technology", isComing: true, data: Date.customStringDate(StringDate: "03-12-2020")),
+                MessageModel(text: "the new company is very good and the team is very very intellegent and has more informations about technology the new company is very good and the team is very very intellegent and has more informations about technology the new company is very good and the team is very very intellegent and has more informations about technology", isComing: false, data: Date.customStringDate(StringDate: "04-12-2020"))
     ]
     
     
-    
-    var dataArray = [[MessageModel]]()
     
     
     fileprivate func groupingMessage(){
@@ -130,52 +130,4 @@ class ViewController: UITableViewController {
 }
 
 
-extension Date {
-    static func customStringDate(StringDate:String)->Date{
-        let dateFormatte = DateFormatter()
-        dateFormatte.dateFormat = "dd-MM-yyyy"
-        let dataString = dateFormatte.date(from: StringDate)
-        return dataString ?? Date()
-    }
-    
-    static func stringDateFromDate(date:Date)->String{
-        let dateFormatte = DateFormatter()
-        dateFormatte.dateFormat = "dd-MM-yyyy"
-        let dataString = dateFormatte.string(from: date)
-        return dataString
-    }
-}
-
-
-    
-    
-
-
-class DateLableHeader : UILabel {
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        configration()
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    override var intrinsicContentSize: CGSize {
-        let contentSize = super.intrinsicContentSize
-        let hight = contentSize.height + 12
-        let width = contentSize.width + 20
-        return CGSize(width: width, height: hight)
-    }
-    
-    
-    func configration(){
-        self.backgroundColor = .black
-        self.textColor = .white
-        self.layer.cornerRadius = 15
-        self.layer.masksToBounds = true
-        self.textAlignment = .center
-    }
-}
 

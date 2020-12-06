@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBD13C33257CCA97005AC902 /* ModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD13C32257CCA97005AC902 /* ModelResponse.swift */; };
+		DBD13C37257CCAD9005AC902 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD13C36257CCAD9005AC902 /* Date+Ext.swift */; };
+		DBD13C3B257CCB06005AC902 /* HeaderLable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD13C3A257CCB06005AC902 /* HeaderLable.swift */; };
 		DBD9D4BC2579248B0030CC4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9D4BB2579248B0030CC4F /* AppDelegate.swift */; };
 		DBD9D4C02579248B0030CC4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD9D4BF2579248B0030CC4F /* ViewController.swift */; };
 		DBD9D4C52579248C0030CC4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBD9D4C42579248C0030CC4F /* Assets.xcassets */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DBD13C32257CCA97005AC902 /* ModelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelResponse.swift; sourceTree = "<group>"; };
+		DBD13C36257CCAD9005AC902 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		DBD13C3A257CCB06005AC902 /* HeaderLable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLable.swift; sourceTree = "<group>"; };
 		DBD9D4B82579248B0030CC4F /* Auto Sizing Cells.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto Sizing Cells.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD9D4BB2579248B0030CC4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBD9D4BF2579248B0030CC4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +75,38 @@
 			path = Scens;
 			sourceTree = "<group>";
 		};
+		DBD13C2F257CCA53005AC902 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				DBD13C36257CCAD9005AC902 /* Date+Ext.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		DBD13C30257CCA64005AC902 /* CustomeView */ = {
+			isa = PBXGroup;
+			children = (
+				DBD13C39257CCAF4005AC902 /* Lable */,
+			);
+			path = CustomeView;
+			sourceTree = "<group>";
+		};
+		DBD13C31257CCA7D005AC902 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBD13C32257CCA97005AC902 /* ModelResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DBD13C39257CCAF4005AC902 /* Lable */ = {
+			isa = PBXGroup;
+			children = (
+				DBD13C3A257CCB06005AC902 /* HeaderLable.swift */,
+			);
+			path = Lable;
+			sourceTree = "<group>";
+		};
 		DBD9D4AF2579248B0030CC4F = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +126,10 @@
 		DBD9D4BA2579248B0030CC4F /* Auto Sizing Cells */ = {
 			isa = PBXGroup;
 			children = (
+				DBD13C31257CCA7D005AC902 /* Model */,
+				DBD13C30257CCA64005AC902 /* CustomeView */,
 				DB506547257CC97900E84554 /* Scens */,
+				DBD13C2F257CCA53005AC902 /* Extenstions */,
 				DB506546257CC96A00E84554 /* Resources */,
 				DB506545257CC95E00E84554 /* StoryBoard */,
 				DB506544257CC95500E84554 /* Core */,
@@ -167,7 +208,10 @@
 			files = (
 				DBD9D4D825792D520030CC4F /* TableCell.swift in Sources */,
 				DBD9D4C02579248B0030CC4F /* ViewController.swift in Sources */,
+				DBD13C33257CCA97005AC902 /* ModelResponse.swift in Sources */,
 				DBD9D4BC2579248B0030CC4F /* AppDelegate.swift in Sources */,
+				DBD13C37257CCAD9005AC902 /* Date+Ext.swift in Sources */,
+				DBD13C3B257CCB06005AC902 /* HeaderLable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
